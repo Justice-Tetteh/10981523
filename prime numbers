@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int sum = 0;
+ int a,b,c,d ;
+  cout<<"Please enter the number you want to find the list of prime numbers below it:";
+  cin>>b;
+  for(a=2;a<=b;a++){
+    d=1;
+   for(c=2;c<a;c++){
+    if(a%c==0){
+        d=0;
+        break;
+    }
+   }
+ if(d==1)
+    {cout<<a<<",";
+    sum = sum+ a;
+     }
+  }
+ cout<<endl<<"Hence sum is "<< sum;
+}
